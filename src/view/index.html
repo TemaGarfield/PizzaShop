@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PizzaShop</title>
+</head>
+<body>
+  <form method="post" id="order-form">
+      <label for="pizzas">Пицца: </label>
+      <select name="pizza_id" id="pizzas">
+          <option value="-1">--</option>
+      </select>
+      <p id="pizza-error" style="display: none"></p>
+      <label for="sizes">Размер: </label>
+      <select name="size_id" id="sizes">
+          <option value="-1">--</option>
+      </select>
+      <p id="size-error" style="display: none"></p>
+      <label for="sauces">Соус:</label>
+      <select name="sauce_id" id="sauces">
+          <option value="-1">--</option>
+      </select>
+      <button type="submit">Заказать</button>
+  </form>
+  <div id="cheque" style="display: none">
+      <p id="pizza-name"></p>
+      <p id="size-name"></p>
+      <p id="sauce-name"></p>
+      <p id="cost"></p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="./js/getAll.js"></script>
+  <script src="./js/submitForm.js"></script>
+  <script src="./js/converter.js"></script>
+</body>
+</html>
